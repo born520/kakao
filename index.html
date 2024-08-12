@@ -6,19 +6,20 @@
     <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.2/kakao.min.js"
         integrity="sha384-TiCUE00h649CAMonG018J2ujOgDKW/kVWlChEuu4jK2vxfAAD0eZxzCKakxg55G4" crossorigin="anonymous"></script>
     <script>
-        Kakao.init('aa74cfded7d207796a870ea251c34dfb'); // 새로운 앱의 JavaScript 키 입력
+        // JavaScript Key 초기화
+        Kakao.init('aa74cfded7d207796a870ea251c34dfb'); // 올바른 JavaScript 키
     </script>
 </head>
 <body>
     <a id="add-channel-button" href="javascript:addChannel()">
-        <img src="https://example.com/path/to/your/button_image.png"
+        <img src="https://t1.kakaocdn.net/kakao_js_sdk/kakao/channel_add_small.png"
             alt="카카오톡 채널 추가하기 버튼" />
     </a>
 
     <script>
         function addChannel() {
             Kakao.Channel.addChannel({
-                channelPublicId: '_uWxgKG', // 새로운 채널의 공개 ID
+                channelPublicId: '_uWxgKG', // 올바른 채널의 공개 ID
             });
         }
     </script>
